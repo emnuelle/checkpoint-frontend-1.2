@@ -1,0 +1,38 @@
+:root {
+    /* Adicionando variáveis */
+
+    --cor-primaria: rgba(0, 0, 0, 0.80);
+    --cor-secundaria: #FBFBFD;
+    --tom-1: #000;
+
+}
+
+* {
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    width: 100%;
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: top 1s;
+
+    background-color: var(--cor-primaria);
+}
+
+#navicon {
+    width: 3rem;
+    height: 3rem;
+
+    fill: var(--cor-secundaria);
+}
