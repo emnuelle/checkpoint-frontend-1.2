@@ -21,6 +21,9 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+
     background-color: var(--tom-2);
 }
 
@@ -75,6 +78,10 @@ section.ImagemTxtDestaque {
     align-items: center;
 }
 
+div {
+    padding: 10px;
+}
+
 .ImagemTxtDestaque img{
     width: 400px;
 
@@ -91,24 +98,54 @@ section.ImagemTxtDestaque {
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap; /*se precisar, quebra a linha*/
+    flex-wrap: wrap; 
 }
 
-.cards .card {
-    width: 30%;
-    min-height:  150px;
-    margin-bottom: 30px;
+.footer {
+    display: flex;
+    flex-direction: column-reverse;
 
-    padding: 5px 5px 5px 5px;
+    background-color: var(--cor-primaria);
+    color: var(--tom-2);
+    padding: 20px;
 }
 
-.cards .card h2{
-    text-align: center;
-    margin-bottom: 15px;
+.footer p {
+    margin: 10px;
+
+    font-size: 15px;
 }
 
-.cards .card .img {
-    max-width: 90%;
+/* Estilos para telas pequenas (até 600px, como celulares) */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+    nav ul {
+        padding: 10px;
+    }
+    nav ul li a {
+        padding: 10px;
+    }
+    .ImagemTxtDestaque img {
+        width: 100%;
+        padding: 10px;
+    }
+    .footer p {
+        font-size: 12px;
+        margin: 5px;
+    }
+}
+
+/* Estilos para telas médias (de 601px a 1024px, como iPads) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .cards {
+        padding: 10px;
+    }
+    .footer p {
+        font-size: 14px;
+        margin: 8px;
+    }
 }
 
 /* Depois adicionar um media query */
