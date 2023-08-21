@@ -25,6 +25,8 @@ body {
     padding: 0;
 
     background-color: var(--tom-2);
+    color: var(--cor-texto-primaria);
+    font-size: var(--tamanho-fonte-base);
 }
 
 img {
@@ -116,31 +118,44 @@ div {
     font-size: 15px;
 }
 
-/* Estilos para telas pequenas (até 600px, como celulares) */
 @media (max-width: 600px) {
     header {
-        padding: 15px;
+        padding: 20px 15px;
     }
     nav ul {
         padding: 10px;
+        flex-direction: column;
     }
     nav ul li a {
-        padding: 10px;
+        padding: 10px 0;
+        display: block;
     }
     .ImagemTxtDestaque img {
         width: 100%;
         padding: 10px;
     }
+    .cards {
+        padding: 10px;
+    }
+    .footer {
+        padding: 10px;
+        text-align: center;
+    }
     .footer p {
-        font-size: 12px;
         margin: 5px;
+        font-size: 14px;
     }
 }
 
-/* Estilos para telas médias (de 601px a 1024px, como iPads) */
 @media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 30px;
+    }
+    nav ul {
+        padding: 20px;
+    }
     .cards {
-        padding: 10px;
+        padding: 20px;
     }
     .footer p {
         font-size: 14px;
@@ -148,4 +163,3 @@ div {
     }
 }
 
-/* Depois adicionar um media query */
